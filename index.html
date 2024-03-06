@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <header>
-    H
-  </header>
-    
-  <body style="background:#36614f;">
-    <h1 style="color:white;">Test</h1>
-    <h3 style="color:white;">--</h3>
-  
-    <div >
+
+<head>
+  <style>
+    body {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      font-family: Verdana, sans-serif;
+      background: whitesmoke;
       
-    </div>
-  </body>
+      animation-name: ani-body;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+    @keyframes ani-body {
+      0%    {background: whitesmoke;}
+      100%  {background: black;}
+    }
+
+    footer {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      height: 60px;
+    }
+
+    centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      animation-name: ani-text;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+    h1:hover {
+      background-color: rgba(255, 208, 0, 0.5);
+      border-radius: 5px;
+      padding: 10px;
+      cursor: none;
+    }
+
+    @keyframes ani-text {
+      0%    {color: black;}
+      100%  {color: whitesmoke;}
+    }
+
+    p {
+      animation-name: ani-text;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <centered>
+    <h1>
+      Fett Stek
+    </h1>
+  </centered>
+
   <footer>
-    ~
+    <centered>
+      <p>made on 🌍</p>
+    </centered>
   </footer>
+</body>
+
 </html>
