@@ -9,18 +9,19 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      font-family: Verdana, sans-serif;
-      background: whitesmoke;
-      
-      animation-name: ani-body;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate-reverse;
+
+      cursor: default;
     }
 
-    @keyframes ani-body {
-      0%    {background: whitesmoke;}
-      100%  {background: black;}
+    background {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+
+      background: rgb(130, 255, 255);
+      background: linear-gradient(0deg, rgb(245, 175, 200) 0%, rgb(130, 255, 255) 100%);
     }
 
     footer {
@@ -28,7 +29,7 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      height: 60px;
+      height: 40px;
     }
 
     centered {
@@ -38,48 +39,39 @@
       transform: translate(-50%, -50%);
     }
 
-    h1 {
-      animation-name: ani-text;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate-reverse;
-    }
-
-    h1:hover {
-      background-color: rgba(255, 208, 0, 0.5);
-      border-radius: 5px;
-      padding: 10px;
-      cursor: none;
-    }
-
-    @keyframes ani-text {
-      0%    {color: black;}
-      100%  {color: whitesmoke;}
-    }
-
+    h1,
     p {
-      animation-name: ani-text;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate-reverse;
+      font-family: Verdana, sans-serif;
+      font-weight: bolder;
+      font-style: italic;
+      color: #030303;
+      text-align: center;
     }
-
   </style>
 </head>
 
 <body>
-
-  <centered>
-    <h1>
-      Fett Stek
-    </h1>
-  </centered>
-
-  <footer>
+  <background>
     <centered>
-      <p>made on 🌍</p>
+      <h1>
+        Henrik Johansson
+      </h1>
+
+      <div class="badge-base LI-profile-badge" data-locale="en_SE" data-size="medium" data-theme="light"
+        data-type="VERTICAL" data-vanity="henrik-json" data-version="v1">
+        <a class="badge-base__link LI-simple-link" href="https://se.linkedin.com/in/henrik-json?trk=profile-badge">
+          Henrik Johansson
+        </a>
+      </div>
+
     </centered>
-  </footer>
+
+    <footer>
+      <centered>
+        <p>made in 🌍</p>
+      </centered>
+    </footer>
+  </background>
 </body>
 
 </html>
